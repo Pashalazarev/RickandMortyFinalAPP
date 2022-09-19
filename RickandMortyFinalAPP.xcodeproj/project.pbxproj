@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA64001C28D865B900C9D104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64001B28D865B900C9D104 /* AppDelegate.swift */; };
-		FA64001E28D865B900C9D104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64001D28D865B900C9D104 /* SceneDelegate.swift */; };
 		FA64002028D865B900C9D104 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64001F28D865B900C9D104 /* ViewController.swift */; };
 		FA64002328D865B900C9D104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA64002128D865B900C9D104 /* Main.storyboard */; };
 		FA64002528D865BA00C9D104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA64002428D865BA00C9D104 /* Assets.xcassets */; };
 		FA64002828D865BA00C9D104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA64002628D865BA00C9D104 /* LaunchScreen.storyboard */; };
+		FA64003028D865D900C9D104 /* RickAndMorty.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64002F28D865D900C9D104 /* RickAndMorty.swift */; };
+		FA64003828D8D8EE00C9D104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64003728D8D8EE00C9D104 /* AppDelegate.swift */; };
+		FA64003A28D8D8FC00C9D104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64003928D8D8FC00C9D104 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA64001828D865B900C9D104 /* RickandMortyFinalAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickandMortyFinalAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA64001B28D865B900C9D104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA64001D28D865B900C9D104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA64001F28D865B900C9D104 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA64002228D865B900C9D104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA64002428D865BA00C9D104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA64002728D865BA00C9D104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA64002928D865BA00C9D104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA64002F28D865D900C9D104 /* RickAndMorty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMorty.swift; sourceTree = "<group>"; };
+		FA64003728D8D8EE00C9D104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA64003928D8D8FC00C9D104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,49 @@
 		FA64001A28D865B900C9D104 /* RickandMortyFinalAPP */ = {
 			isa = PBXGroup;
 			children = (
-				FA64001B28D865B900C9D104 /* AppDelegate.swift */,
-				FA64001D28D865B900C9D104 /* SceneDelegate.swift */,
-				FA64001F28D865B900C9D104 /* ViewController.swift */,
-				FA64002128D865B900C9D104 /* Main.storyboard */,
+				FA64003128D865DF00C9D104 /* Models */,
+				FA64003D28D8DA1200C9D104 /* ViewControllers */,
+				FA64003E28D8DA6100C9D104 /* StoryBoards */,
+				FA64003C28D8D9E900C9D104 /* ServiceFiles */,
 				FA64002428D865BA00C9D104 /* Assets.xcassets */,
-				FA64002628D865BA00C9D104 /* LaunchScreen.storyboard */,
 				FA64002928D865BA00C9D104 /* Info.plist */,
 			);
 			path = RickandMortyFinalAPP;
+			sourceTree = "<group>";
+		};
+		FA64003128D865DF00C9D104 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA64002F28D865D900C9D104 /* RickAndMorty.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA64003C28D8D9E900C9D104 /* ServiceFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FA64003728D8D8EE00C9D104 /* AppDelegate.swift */,
+				FA64003928D8D8FC00C9D104 /* SceneDelegate.swift */,
+			);
+			name = ServiceFiles;
+			path = StoryBoards/ServiceFiles;
+			sourceTree = "<group>";
+		};
+		FA64003D28D8DA1200C9D104 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA64001F28D865B900C9D104 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA64003E28D8DA6100C9D104 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				FA64002128D865B900C9D104 /* Main.storyboard */,
+				FA64002628D865BA00C9D104 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA64003A28D8D8FC00C9D104 /* SceneDelegate.swift in Sources */,
+				FA64003828D8D8EE00C9D104 /* AppDelegate.swift in Sources */,
+				FA64003028D865D900C9D104 /* RickAndMorty.swift in Sources */,
 				FA64002028D865B900C9D104 /* ViewController.swift in Sources */,
-				FA64001C28D865B900C9D104 /* AppDelegate.swift in Sources */,
-				FA64001E28D865B900C9D104 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +343,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +371,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
