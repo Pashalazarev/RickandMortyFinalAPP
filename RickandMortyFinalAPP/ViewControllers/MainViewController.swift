@@ -9,7 +9,7 @@ import UIKit
 
 let rickAndMortyURL = "https://rickandmortyapi.com/api/character/53"
 
-class ViewController: UIViewController {
+class MainViewController: UITableViewController {
 
 
   
